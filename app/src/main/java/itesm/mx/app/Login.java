@@ -42,7 +42,8 @@ public class Login extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     public void iniciarSesion(View view){
-        Intent i = new Intent(this, IniciarSesion.class);
+        //Intent i = new Intent(this, IniciarSesion.class);
+        Intent i = new Intent(this, GraciasDonacion.class);
         startActivity(i);
     }
     public void registrarse(View view){

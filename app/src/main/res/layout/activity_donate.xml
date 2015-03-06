@@ -75,6 +75,7 @@
             android:layout_height="wrap_content"
             android:text="Donar"
             android:id="@+id/button4"
+            android:onClick="linkToDonate"
             android:layout_gravity="right" />
     </LinearLayout>
 

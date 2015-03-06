@@ -6,4 +6,5 @@
     <string name="title_activity_donate">Donar</string>
     <string name="title_activity_inciar_sesion">InciarSesion</string>
     <string name="title_activity_registrarse">Registrarse</string>
+    <string name="title_activity_gracias_donacion">GraciasDonacion</string>
 </resources>

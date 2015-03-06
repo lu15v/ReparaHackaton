@@ -1,5 +1,6 @@
 package itesm.mx.app;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -72,5 +73,9 @@ public class DonateActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+    public void linkToDonate(View view){
+        Intent i = new Intent(this, GraciasDonacion.class);
+        startActivity(i);
     }
 }
