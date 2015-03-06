@@ -1,6 +1,7 @@
 package itesm.mx.app;
 
 import android.content.Intent;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -9,7 +10,7 @@ import android.view.View;
 
 
 public class IniciarSesion extends ActionBarActivity {
-
+   static ActionBar actionBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,10 +38,6 @@ public class IniciarSesion extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void regresarLogin(View view){
-        Intent i = new Intent(this, Login.class);
-        startActivity(i);
     }
 
 }

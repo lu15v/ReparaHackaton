@@ -38,8 +38,4 @@ public class Registrarse extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void regresarLogin(View view){
-        Intent i = new Intent(this, Login.class);
-        startActivity(i);
-    }
 }
