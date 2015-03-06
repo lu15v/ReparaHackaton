@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="itesm.mx.app.DonateActivity"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton"
+        android:minWidth="100dp"
+        android:minHeight="100dp"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:src="@drawable/avatar_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="352dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_articleName"
+        android:layout_below="@+id/imageButton"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="Artículo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/ed_quantity"
+        android:layout_alignBottom="@+id/btn_AddArticle"
+        android:layout_alignParentStart="true"
+        android:hint="Cantidad" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agregar"
+        android:id="@+id/btn_AddArticle"
+        android:layout_below="@+id/ed_articleName"
+        android:layout_alignEnd="@+id/ed_articleName" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="205dp"
+        android:layout_below="@+id/btn_AddArticle"
+        android:layout_alignEnd="@+id/btn_AddArticle">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lv_articles"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/btn_AddArticle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/imageButton">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donar"
+            android:id="@+id/button4"
+            android:onClick="linkToDonate"
+            android:layout_gravity="right" />
+    </LinearLayout>
+
+</LinearLayout>

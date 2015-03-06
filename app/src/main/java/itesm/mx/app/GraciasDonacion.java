@@ -1,29 +1,24 @@
 package itesm.mx.app;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 
 
-public class Login extends ActionBarActivity {
+public class GraciasDonacion extends ActionBarActivity {
 
-
-    //Hola Como
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_gracias_donacion);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
+        getMenuInflater().inflate(R.menu.menu_gracias_donacion, menu);
         return true;
     }
 
@@ -40,14 +35,5 @@ public class Login extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
-    }
-    public void iniciarSesion(View view){
-        //Intent i = new Intent(this, IniciarSesion.class);
-        Intent i = new Intent(this, GraciasDonacion.class);
-        startActivity(i);
-    }
-    public void registrarse(View view){
-        Intent i = new Intent(this, Registrarse.class);
-        startActivity(i);
     }
 }
