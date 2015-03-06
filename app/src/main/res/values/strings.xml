@@ -7,4 +7,7 @@
     <string name="title_activity_inciar_sesion">InciarSesion</string>
     <string name="title_activity_registrarse">Registrarse</string>
     <string name="title_activity_gracias_donacion">GraciasDonacion</string>
+    <string name="title_activity_gracias_por_donacion">GraciasPorDonacion</string>
+    <string name="title_activity_gracias">Gracias</string>
+    <string name="title_activity_camera">Camera</string>
 </resources>

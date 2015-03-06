@@ -75,7 +75,7 @@ public class DonateActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     public void linkToDonate(View view){
-        Intent i = new Intent(this, GraciasDonacion.class);
+        Intent i = new Intent(this, Gracias.class);
         startActivity(i);
     }
 }

@@ -17,6 +17,7 @@ public class Login extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
     }
 
 
@@ -42,8 +43,8 @@ public class Login extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
     public void iniciarSesion(View view){
-        //Intent i = new Intent(this, IniciarSesion.class);
-        Intent i = new Intent(this, GraciasDonacion.class);
+       // Intent i = new Intent(this, IniciarSesion.class);
+        Intent i = new Intent(this, Gracias.class);
         startActivity(i);
     }
     public void registrarse(View view){
