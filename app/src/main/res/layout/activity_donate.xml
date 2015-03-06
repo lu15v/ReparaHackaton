@@ -44,13 +44,14 @@
         android:layout_height="wrap_content"
         android:text="Agregar"
         android:id="@+id/btn_AddArticle"
+        android:onClick="addArticle"
         android:layout_below="@+id/ed_articleName"
         android:layout_alignEnd="@+id/ed_articleName" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="205dp"
+        android:layout_height="197dp"
         android:layout_below="@+id/btn_AddArticle"
         android:layout_alignEnd="@+id/btn_AddArticle">
 
@@ -66,7 +67,7 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="60dp"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageButton">
 
         <Button

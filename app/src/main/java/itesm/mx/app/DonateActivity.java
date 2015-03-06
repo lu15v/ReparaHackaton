@@ -10,18 +10,25 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class DonateActivity extends ActionBarActivity {
 
-    private static String[] articles = {"Papel", "Aluminio", "Carton", "Equipos de cómputo",
+    private String[] initVals = {"Papel", "Aluminio", "Carton", "Equipos de cómputo",
             "Metales", "Baterías", "Envase"};
+    private ArrayList<String> articles = new ArrayList<String>(Arrays.asList(initVals));
 
     ListView lv_articles;
     EditText et_articleName;
     EditText et_quantity;
+    ArrayAdapter<String> adapter;
 
     public void addArticle(View view) {
-        String name;
+        String name = et_articleName.getText().toString();
+        articles.add(name);
+        adapter.notifyDataSetChanged();
     }
 
     @Override
@@ -39,7 +46,7 @@ public class DonateActivity extends ActionBarActivity {
         // Third parameter - ID of the TextView to which the data is written
         // Forth - the Array of data
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+        adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_multiple_choice, articles);
         lv_articles.setAdapter(adapter);
 
