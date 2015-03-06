@@ -27,7 +27,11 @@ public class DonateActivity extends ActionBarActivity {
 
     public void addArticle(View view) {
         String name = et_articleName.getText().toString();
-        articles.add(name);
+        String q = et_quantity.getText().toString();
+        if (q.equals("")) {
+            q = "1";
+        }
+        articles.add(name + " ( " + q + " )");
         adapter.notifyDataSetChanged();
     }
 

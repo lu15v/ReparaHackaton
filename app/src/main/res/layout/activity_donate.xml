@@ -5,7 +5,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="itesm.mx.app.DonateActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -15,7 +16,7 @@
         android:minHeight="100dp"
         android:maxHeight="100dp"
         android:maxWidth="100dp"
-        android:src="@drawable/avatar_logo"
+        android:src="@drawable/avatar"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_horizontal" />
@@ -39,7 +40,7 @@
         android:layout_alignParentStart="true"
         android:hint="Cantidad" />
 
-    <Button
+    <com.gc.materialdesign.views.ButtonRectangle
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Agregar"
@@ -51,9 +52,10 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="fill_parent"
-        android:layout_height="197dp"
+        android:layout_height="169dp"
         android:layout_below="@+id/btn_AddArticle"
-        android:layout_alignEnd="@+id/btn_AddArticle">
+        android:layout_alignEnd="@+id/btn_AddArticle"
+        android:background="#FFF">
 
         <ListView
             android:layout_width="match_parent"
@@ -68,15 +70,15 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton">
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_weight="0.50">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="Donar"
             android:id="@+id/button4"
-            android:onClick="linkToDonate"
-            android:layout_gravity="right" />
+            android:onClick="linkToDonate" />
     </LinearLayout>
 
 </LinearLayout>
