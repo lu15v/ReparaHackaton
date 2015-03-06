@@ -1,14 +1,18 @@
 package itesm.mx.app;
 
+import android.animation.Animator;
 import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import java.util.TimerTask;
 
-public class Login extends ActionBarActivity {
+
+public class Login extends FragmentActivity {
 
 
     //Hola Como
@@ -30,6 +34,7 @@ public class Login extends ActionBarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
@@ -44,7 +49,7 @@ public class Login extends ActionBarActivity {
     }
     public void iniciarSesion(View view){
        // Intent i = new Intent(this, IniciarSesion.class);
-        Intent i = new Intent(this, Gracias.class);
+        Intent i = new Intent(this, IniciarSesion.class);
         startActivity(i);
     }
     public void registrarse(View view){

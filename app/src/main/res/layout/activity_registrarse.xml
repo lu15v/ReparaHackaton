@@ -15,7 +15,9 @@
         android:text="Registrarse"
         android:id="@+id/button5"
         android:layout_below="@+id/editText7"
-        android:layout_centerHorizontal="true" />
+        android:onClick="registroExitoso"
+        android:layout_centerHorizontal="true"
+        android:background="#ff4caf50" />
 
     <EditText
         android:layout_width="wrap_content"

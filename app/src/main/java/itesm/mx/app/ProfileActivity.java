@@ -42,4 +42,9 @@ public class ProfileActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void toRank(View view){
+        //Intent i = new Intent(this, RankListItem.class);
+        Intent i = new Intent(this,DonateActivity.class );
+        startActivity(i);
+    }
 }

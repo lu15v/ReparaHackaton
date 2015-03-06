@@ -10,4 +10,12 @@
     <string name="title_activity_gracias_por_donacion">GraciasPorDonacion</string>
     <string name="title_activity_gracias">Gracias</string>
     <string name="title_activity_camera">Camera</string>
+    <string name="action_example">Example action</string>
+    <string name="title_activity_ranks">RanksActivity</string>
+    <string name="title_activity_rank_list_item">RankListItem</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_activity_fierrosy_metalesde_mexico">FierrosyMetalesdeMexico</string>
+    <string name="title_activity_recicladosde_papely_carton">RecicladosdePapelyCarton</string>
+    <string name="title_activity_comercializadoray_embarques">ComercializadorayEmbarques</string>
+    <string name="title_activity_registro_exitoso">RegistroExitoso</string>
 </resources>

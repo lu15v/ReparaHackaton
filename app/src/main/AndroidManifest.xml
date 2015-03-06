@@ -10,10 +10,8 @@
         <activity
             android:name=".Login"
             android:label="@string/app_name" >
-        </activity>
-        <activity
-            android:name=".DonateActivity"
-            android:label="@string/title_activity_donate" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -21,6 +19,7 @@
         <activity
             android:name=".DonateActivity"
             android:label="@string/title_activity_donate" >
+            <category android:name="android.intent.category.LAUNCHER" />
         </activity>
         <activity
             android:name=".IniciarSesion"
@@ -35,17 +34,15 @@
             android:label="@string/title_activity_gracias" >
         </activity>
         <activity
-            android:name=".Camera"
-            android:label="@string/title_activity_camera" >
-        </activity>
-        <activity
             android:name=".ProfileActivity"
             android:label="@string/title_activity_profile" >
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.MAIN" />-->
 
-                <!--<category android:name="android.intent.category.LAUNCHER" />-->
-            <!--</intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".RanksActivity"
@@ -54,6 +51,22 @@
         <activity
             android:name=".RankListItem"
             android:label="@string/title_activity_rank_list_item" >
+        </activity>
+        <activity
+            android:name=".FierrosyMetalesdeMexico"
+            android:label="@string/title_activity_fierrosy_metalesde_mexico" >
+        </activity>
+        <activity
+            android:name=".RecicladosdePapelyCarton"
+            android:label="@string/title_activity_recicladosde_papely_carton" >
+        </activity>
+        <activity
+            android:name=".ComercializadorayEmbarques"
+            android:label="@string/title_activity_comercializadoray_embarques" >
+        </activity>
+        <activity
+            android:name=".RegistroExitoso"
+            android:label="@string/title_activity_registro_exitoso" >
         </activity>
     </application>
 

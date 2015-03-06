@@ -38,4 +38,8 @@ public class Registrarse extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+    public void registroExitoso(View view){
+        Intent i = new Intent(this, RegistroExitoso.class);
+        startActivity(i);
+    }
 }

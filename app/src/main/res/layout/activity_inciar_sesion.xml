@@ -13,7 +13,9 @@
         android:id="@+id/button3"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="177dp" />
+        android:onClick="toProfile"
+        android:layout_marginBottom="177dp"
+        android:background="#ff4caf50" />
 
     <EditText
         android:layout_width="wrap_content"

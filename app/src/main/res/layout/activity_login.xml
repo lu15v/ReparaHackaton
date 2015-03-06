@@ -6,7 +6,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Login"
-    android:id="@+id/.Login">
+    android:id="@+id/.Login"
+    android:background="@drawable/inicio">
 
     <com.gc.materialdesign.views.ButtonRectangle
         android:layout_width="wrap_content"
@@ -15,7 +16,8 @@
         android:id="@+id/button"
         android:layout_alignParentBottom="true"
         android:onClick="iniciarSesion"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="#ff4caf50" />
 
     <com.gc.materialdesign.views.ButtonRectangle
         android:layout_width="wrap_content"
@@ -24,6 +26,7 @@
         android:id="@+id/button2"
         android:layout_alignParentBottom="true"
         android:onClick="registrarse"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="#ff4caf50" />
 
 </RelativeLayout>
