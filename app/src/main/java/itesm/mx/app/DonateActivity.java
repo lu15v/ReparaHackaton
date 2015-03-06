@@ -27,7 +27,11 @@ public class DonateActivity extends ActionBarActivity {
 
     public void addArticle(View view) {
         String name = et_articleName.getText().toString();
-        articles.add(name + "(" + et_quantity.getText().toString() + ")");
+        String q = et_quantity.getText().toString();
+        if (q.equals("")) {
+            q = "1";
+        }
+        articles.add(name + " ( " + q + " )");
         adapter.notifyDataSetChanged();
     }
 
@@ -74,7 +78,8 @@ public class DonateActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void linkToDonate(View view){
+
+    public void linkToDonate(View view) {
         Intent i = new Intent(this, GraciasDonacion.class);
         startActivity(i);
     }
